@@ -1,0 +1,2 @@
+include gmhp/templates/*.html
+include gmhp/templates/themes/*.css
