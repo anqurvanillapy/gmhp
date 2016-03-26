@@ -15,7 +15,7 @@ for html in os.listdir(html_dir):
     if os.path.isfile(item):
         htmls.append(item)
 css = [os.path.join(css_dir, f) for f in os.listdir(css_dir)]
-data_path = os.path.join(os.path.expanduser('~'), '.gmhp')
+data_path = os.path.expanduser('~/.gmhp')
 data_pair = [(os.path.join(data_path, html_dir[5:]), htmls),
              (os.path.join(data_path, css_dir[5:]), css)]
 # print(data_pair)

@@ -18,12 +18,17 @@ def parse_arguments():
     intro = 'An amateur slideshow generator.'
     parser = argparse.ArgumentParser(description=intro)
     parser.add_argument(
-        'ifile',
+        'ifilename',
         action='store',
-        metavar='filename',
+        metavar='inputname',
         nargs=1,
-        type=file,
         help='specify your input Markdown filename')
+    parser.add_argument(
+        'ofilename',
+        action='store',
+        metavar='outputname',
+        nargs=1,
+        help='specify the output HTML format filename')
     parser.add_argument(
         '--theme',
         action='store',
