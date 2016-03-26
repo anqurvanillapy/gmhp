@@ -1,6 +1,60 @@
 /**
  *  White theme stylesheet with printer config
  */
+
 body {
+  margin: 0;
+  text-align: center;
+}
+
+section {
+  margin-top: 12em;
+  display: none;
+}
+
+h1 {
+  margin: .1em auto;
+  font-family: 'Lobster', 'Times New Roman', serif;
+  font-weight: normal;
+  font-size: 9em;
+}
+
+h2 {
+  margin: .3em auto;
+  font-family: 'Poiret One', sans-serif;
+  font-weight: normal;
+  font-size: 4em;
+  color: gray;
+}
+
+p, ul, ol {
+  text-align: left;
+  font-size: 3em;
+  font-family: 'Merriweather', 'Times New Roman', serif;
+}
+
+ul, ol {
+  width: 50%;
   margin: 0 auto;
+}
+
+.progress-bar {
+  position: fixed;
+  height: 4px;
+  bottom: 0;
+  background-color: royalblue;
+}
+
+@media print {
+  section {
+    display: block !important;
+    page-break-after: always !important;
+  }
+  section:last-of-type {
+    page-break-after: avoid !important;
+  }
+
+  .progress-bar {
+    display: none !important;
+  }
 }
