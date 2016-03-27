@@ -1,5 +1,5 @@
 /**
- *  White theme stylesheet with printer config
+ *  White theme stylesheet
  */
 
 body {
@@ -8,53 +8,69 @@ body {
 }
 
 section {
-  margin-top: 12em;
+  margin-top: 5em;
   display: none;
 }
 
-h1 {
-  margin: .1em auto;
-  font-family: 'Lobster', 'Times New Roman', serif;
+h1, h3 {
+  margin-bottom: .1em;
+  font-family: 'Lobster-Regular', 'Times New Roman', serif;
   font-weight: normal;
+}
+h1 {
+  margin-top: 1.2em;
   font-size: 9em;
+}
+h3 {
+  margin-top: .1em;
+  font-size: 5em;
 }
 
 h2 {
   margin: .3em auto;
-  font-family: 'Poiret One', sans-serif;
+  font-family: 'PoiretOne-Regular', sans-serif;
   font-weight: normal;
   font-size: 4em;
   color: gray;
 }
 
-p, ul, ol {
+p, ul, ol, pre {
+  margin: 0 auto;
+  width: 50%;
   text-align: left;
-  font-size: 3em;
-  font-family: 'Merriweather', 'Times New Roman', serif;
 }
 
-ul, ol {
-  width: 50%;
+p, ul, ol {
+  font-size: 36px;
+  font-family: 'Merriweather-Regular', 'Times New Roman', serif;
+}
+
+ul li *, ol li * {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
   margin: 0 auto;
+  max-width: 90%;
+}
+
+pre {
+  padding: .5em;
+  font-size: 2em;
+  border-radius: 2px;
+  background-color: #eee;
+  box-shadow: 4px 5px #ccc;
 }
 
 .progress-bar {
   position: fixed;
-  height: 4px;
+  height: 6px;
   bottom: 0;
   background-color: royalblue;
-}
-
-@media print {
-  section {
-    display: block !important;
-    page-break-after: always !important;
-  }
-  section:last-of-type {
-    page-break-after: avoid !important;
-  }
-
-  .progress-bar {
-    display: none !important;
-  }
 }

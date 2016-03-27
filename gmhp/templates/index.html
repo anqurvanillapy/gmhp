@@ -1,34 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{{ title }}</title>
-  <link href='https://fonts.googleapis.com/css?family=Lobster|Poiret+One|Merriweather' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="themes/white.css">
-<!-- 
-  <style type="text/css">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>{{ title }}</title>
+
+<style type="text/css">
+/* Style for printing and font family init */
+{% for font in fonts %}
+@font-face {
+  font-family: '{{ font['name'] }}';
+  src: url(data:font/truetype;charset=utf-8;base64,{{ font['data'] }}) format('truetype');;
+  font-weight: normal;
+  font-style: normal;
+}
+{% endfor %}
+
+@media print {
+  section {
+    display: block !important;
+    page-break-after: always !important;
+  }
+  section:last-of-type {
+    page-break-after: avoid !important;
+  }
+
+  .progress-bar {
+    display: none !important;
+  }
+}
+</style>
+
+<style type="text/css">
+/* Style for code highlighting */
+{{ hlcss }}
+/* no code block bg color */
+.codehilite {
+  background-color: transparent;
+}
+</style>
+
+<style type="text/css">
 {{ css }}
-  </style> -->
+</style>
+
 </head>
 <body>
-<!-- {{ content }} -->
-<section id="slide0">
-  <h1>Hello, world!</h1>
-  <h2>Powered by GmHp</h2>
+
+{% for slide in content %}
+<section id="slide{{ slide[0] }}">
+{{ slide[1] }}
 </section>
-<section id="slide1">
-  <h1>Nailed It!</h1>
-</section>
-<section id="slide2">
-  <ul>
-    <li>We do it,</li>
-    <li>Because we can,</li>
-    <li>Muggle!</li>
-  </ul>
-</section>
+{% endfor %}
 
 <div class="progress-bar"></div>
 
@@ -42,6 +68,12 @@
 
       // init 1st slide
       this.present(this.cur_id);
+
+      // click to skip to the next
+      document.onclick = function () {
+        this.cur_id++;
+        this.present(this.cur_id);
+      }.bind(this);
 
       // slideshow keybindings
       window.onkeydown = function(e) {
@@ -89,6 +121,8 @@
       // update progress bar
       if (!progress)
         progress = 1;
+      if (this.total == 1)
+        progress = 100;
       document.querySelector('.progress-bar').style.width = progress + '%';
     },
   };
@@ -97,5 +131,6 @@
   show.main();
 })();
 </script>
+
 </body>
 </html>

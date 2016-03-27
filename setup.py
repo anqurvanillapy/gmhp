@@ -7,17 +7,23 @@ from setuptools import setup, find_packages
 
 short_description = "An amateur slideshow generator"
 html_dir = 'gmhp/templates'
-css_dir = 'gmhp/templates/themes'
+themes_dir = 'gmhp/templates/themes'
+fonts_dir = 'gmhp/templates/themes/fonts'
 
-htmls = []
+themes, htmls = [], []
 for html in os.listdir(html_dir):
     item = os.path.join(html_dir, html)
     if os.path.isfile(item):
         htmls.append(item)
-css = [os.path.join(css_dir, f) for f in os.listdir(css_dir)]
+for theme in os.listdir(themes_dir):
+    item = os.path.join(themes_dir, theme)
+    if os.path.isfile(item):
+        themes.append(item)
+fonts = [os.path.join(fonts_dir, f) for f in os.listdir(fonts_dir)]
 data_path = os.path.expanduser('~/.gmhp')
 data_pair = [(os.path.join(data_path, html_dir[5:]), htmls),
-             (os.path.join(data_path, css_dir[5:]), css)]
+             (os.path.join(data_path, themes_dir[5:]), themes),
+             (os.path.join(data_path, fonts_dir[5:]), fonts)]
 # print(data_pair)
 
 try:
