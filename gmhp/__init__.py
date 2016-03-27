@@ -30,10 +30,11 @@ def parse_arguments():
         nargs=1,
         help='specify the output HTML format filename')
     parser.add_argument(
-        '--theme',
+        '--theme', '-t',
         action='store',
         dest='theme',
         nargs=1,
+        default=['white'],
         help='choose a theme')
     return parser.parse_args()
 
