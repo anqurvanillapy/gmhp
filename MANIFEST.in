@@ -1,3 +1,0 @@
-include gmhp/templates/*.html
-include gmhp/templates/themes/*.css
-include gmhp/templates/themes/fonts/*.ttf
