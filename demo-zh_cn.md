@@ -4,7 +4,7 @@
 
 ---
 
-### 示例
+### **示例**
 
 使用分割线 (`<hr>`) 生成幻灯片内容
 
@@ -20,7 +20,7 @@
 
 ---
 
-### 纯文字 & 引用
+### **纯文字** & **引用**
 
 我能吞下玻璃而不伤身体。但你能吗？勇敢追逐自己的色彩吧。
 
@@ -28,7 +28,7 @@
 
 ---
 
-### 无序列表
+### **无序列表**
 
 - 测试文本
     + 视野无限广，窗外有蓝天
@@ -37,7 +37,7 @@
 
 ---
 
-### 有序列表
+### **有序列表**
 
 - 测试文本
     1. 视野无限广，窗外有蓝天
@@ -46,13 +46,13 @@
 
 ---
 
-### 图片
+### **图片**
 
 ![i-will-never-use-this-code-in-production](i-will-never-use-this-code-in-production.gif)
 
 ---
 
-### 代码块
+### **代码块**
 
 ```python
 def fibonacci():
@@ -70,14 +70,14 @@ for i in fibonacci():
 
 ---
 
-### PDF 输出
+### PDF **输出**
 
 在 Goolge Chrome 中点击 `打印...` 即可保存 PDF。谨记选择
 `横向` 布局以及 `无` 边距。 :)
 
 ---
 
-### 影响
+### **影响**
 
 - 优秀的幻灯片生成工具!
     + [`rst2s5`](http://docutils.sourceforge.net/docs/user/slide-shows.html)
@@ -85,7 +85,7 @@ for i in fibonacci():
 
 ---
 
-### 关于
+### **关于**
 
 - 作者为 [AnqurVanillapy](https://anqurvanillapy.github.io)
 - 此预览页面语言有 [English](index.html) / [中文](index-zh_cn.html)
