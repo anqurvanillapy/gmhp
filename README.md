@@ -113,6 +113,10 @@ stylesheet.
 - Image, `<img>`
 - Code, `<code></code>`
 
+If the content is in **CJK**, you can simply use `**bold**` to stress
+the titles, page headers, etc., for CJK web fonts are not available in
+this project.
+
 ### Key Bindings ###
 
 - Skip to the next slide:
@@ -159,7 +163,8 @@ TODOs
 -----
 
 * [x] Create branch `gh-pages` for demostration.
-* [ ] Use some web fonts to support Chinese characters.
+* [ ] ~~Use some web fonts to support CJK characters.~~ (Most of the
+web font services of CJK font family are restricted.)
 * [ ] Support table syntax and related styles.
 * [ ] Update stylesheets of more themes.
 * [ ] Add a feature of toggling the slideshow outline.
