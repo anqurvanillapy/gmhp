@@ -92,6 +92,21 @@ or ignore this argument to use *white* theme by default.
 $ gmhp slides.md index.html --theme white
 ```
 
+### Currently Stylised Tags ###
+
+The HTML tags stylised in this generator are as follows, therefore
+the styles of the other ones will be executed by the user agent
+stylesheet.
+
+- Paragraph, `<p></p>`
+- List, `<ul></ul>` and `<ol></ol>`
+- Title and subtitle, `<h1></h1>` and `<h2></h2>`
+- Page header, `<h3></h3>`
+- Hyperlink, `<a></a>`
+- Code block, `<pre></pre>`
+- Image, `<img>`
+- Code, `<code></code>`
+
 ### Key Bindings ###
 
 - Skip to the next slide:
@@ -137,6 +152,8 @@ issue I will cope with in the future.*
 TODOs
 -----
 
+* [x] Create branch `gh-pages` for demostration.
+* [ ] Use some web fonts to support Chinese characters.
 * [ ] Update stylesheets of more themes.
 * [ ] Add a feature of toggling the slideshow outline.
 * [ ] Cope with font family customization.
