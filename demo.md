@@ -88,7 +88,7 @@ select `Landscape` in layout and `None` in margins. :)
 
 ### About
 
-- Developed by [AnqurVanillapy](http://anqurvanillapy.github.io)
+- Developed by [AnqurVanillapy](https://anqurvanillapy.github.io)
 - This demo page in [English](index.html) / [中文](index-zh_cn.html)
 
 ## Enjoy your presentation!

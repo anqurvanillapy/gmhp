@@ -87,7 +87,7 @@ for i in fibonacci():
 
 ### 关于
 
-- 作者为 [AnqurVanillapy](http://anqurvanillapy.github.io)
+- 作者为 [AnqurVanillapy](https://anqurvanillapy.github.io)
 - 此预览页面语言有 [English](index.html) / [中文](index-zh_cn.html)
 
 ## 尽情享用!
