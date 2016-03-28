@@ -6,7 +6,7 @@ like Markdown imports, HTML and PDF exports, etc. This generator was
 influenced by S<sup>5</sup> tools (e.g. `rst2s5` in Python package
 `docutils`) and `reveal.js`.
 
-- **GMPH** is also the abbreviation of
+- **GmHp** is also the abbreviation of
     + **G**enerate **M**y **H**omemade **P**resentation
     + **G**enerate **M**arkdown **H**TML **P**DF
 
@@ -160,6 +160,7 @@ TODOs
 
 * [x] Create branch `gh-pages` for demostration.
 * [ ] Use some web fonts to support Chinese characters.
+* [ ] Support table syntax and related styles.
 * [ ] Update stylesheets of more themes.
 * [ ] Add a feature of toggling the slideshow outline.
 * [ ] Cope with font family customization.
