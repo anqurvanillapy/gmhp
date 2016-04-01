@@ -37,6 +37,7 @@ class Generator(object):
         with codecs.open(ifn, 'r', encoding='utf-8') as filehandle:
             content = markdown(filehandle.read(),
                                extensions=['markdown.extensions.fenced_code',
+                                           'markdown.extensions.tables',
                                            'markdown.extensions.codehilite'])
         hlcss = HtmlFormatter().get_style_defs('.codehilite')
         content = content.split('<hr />')

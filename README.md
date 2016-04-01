@@ -109,6 +109,7 @@ stylesheet.
 - Title and subtitle, `<h1></h1>` and `<h2></h2>`
 - Page header, `<h3></h3>`
 - Hyperlink, `<a></a>`
+- Block quotation, `<blockquote></blockquote>`
 - Code block, `<pre></pre>`
 - Image, `<img>`
 - Code, `<code></code>`
@@ -165,8 +166,9 @@ TODOs
 * [x] Create branch `gh-pages` for demostration.
 * [ ] ~~Use some web fonts to support CJK characters.~~ (Most of the
 web font services of CJK font family are restricted.)
-* [ ] Support table syntax and related styles.
-* [ ] Update stylesheets of more themes.
+* [x] Support table syntax and related styles.
+* [ ] Update stylesheets of more themes. (Black, fluid, Takahashi
+method, etc.)
 * [ ] Add a feature of toggling the slideshow outline.
 * [ ] Cope with font family customization.
 * [ ] Add an option to specify whether CDN links or Base64 data should

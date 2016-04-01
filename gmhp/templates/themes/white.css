@@ -41,7 +41,7 @@ p, ul, ol, pre {
   text-align: left;
 }
 
-p, ul, ol {
+p, ul, ol, table {
   font-size: 36px;
   font-family: 'Merriweather-Regular', 'Times New Roman', serif;
   line-height: 1.4;
@@ -93,7 +93,26 @@ pre {
   font-size: 2em;
   border-radius: 2px;
   background-color: #eee;
-  box-shadow: 4px 5px #ccc;
+  border-right: 5px solid #ccc;
+  border-bottom: 4px solid #ccc;
+}
+
+table {
+  margin: .5em auto;
+  font-size: 2em;
+  border-radius: 3px;
+  border-right: 5px solid #ccc;
+  border-bottom: 4px solid #ccc;
+}
+
+td, th {
+  padding: .3em;
+  border-top: 1px solid #eee;
+  border-left: 2px solid #eee;
+}
+
+th {
+  text-decoration: underline;
 }
 
 .progress-bar {
