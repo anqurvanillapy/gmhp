@@ -165,7 +165,7 @@ p, ul, ol, pre {
   text-align: left;
 }
 
-p, ul, ol {
+p, ul, ol, table {
   font-size: 36px;
   font-family: 'Merriweather-Regular', 'Times New Roman', serif;
   line-height: 1.4;
@@ -217,7 +217,26 @@ pre {
   font-size: 2em;
   border-radius: 2px;
   background-color: #eee;
-  box-shadow: 4px 5px #ccc;
+  border-right: 5px solid #ccc;
+  border-bottom: 4px solid #ccc;
+}
+
+table {
+  margin: .5em auto;
+  font-size: 2em;
+  border-radius: 3px;
+  border-right: 5px solid #ccc;
+  border-bottom: 4px solid #ccc;
+}
+
+td, th {
+  padding: .3em;
+  border-top: 1px solid #eee;
+  border-left: 2px solid #eee;
+}
+
+th {
+  text-decoration: underline;
 }
 
 .progress-bar {
@@ -304,6 +323,38 @@ he can just bite me, twice."</p>
 
 <section id="slide6">
 
+<h3>Table</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Age</th>
+<th>Nationality</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>John</td>
+<td>18</td>
+<td>American</td>
+</tr>
+<tr>
+<td>Mike</td>
+<td>17</td>
+<td>English</td>
+</tr>
+<tr>
+<td>Luke</td>
+<td>20</td>
+<td>Chinese</td>
+</tr>
+</tbody>
+</table>
+
+</section>
+
+<section id="slide7">
+
 <h3>Code Block</h3>
 <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">fibonacci</span><span class="p">():</span>
     <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
@@ -322,7 +373,7 @@ he can just bite me, twice."</p>
 
 </section>
 
-<section id="slide7">
+<section id="slide8">
 
 <h3>PDF Export</h3>
 <p>On Goolge Chrome click on <code>Print...</code> to save this as PDF. Remember
@@ -330,7 +381,7 @@ select <code>Landscape</code> in layout and <code>None</code> in margins. :)</p>
 
 </section>
 
-<section id="slide8">
+<section id="slide9">
 
 <h3>Influenced By</h3>
 <ul>
@@ -343,7 +394,7 @@ select <code>Landscape</code> in layout and <code>None</code> in margins. :)</p>
 
 </section>
 
-<section id="slide9">
+<section id="slide10">
 
 <h3>About</h3>
 <ul>

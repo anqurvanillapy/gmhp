@@ -53,6 +53,16 @@ he can just bite me, twice."
 
 ---
 
+### Table
+
+| Name | Age | Nationality |
+|------|-----|-------------|
+| John | 18  |  American   |
+| Mike | 17  |   English   |
+| Luke | 20  |   Chinese   |
+
+---
+
 ### Code Block
 
 ```python
