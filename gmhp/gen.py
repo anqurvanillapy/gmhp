@@ -7,6 +7,7 @@ import base64
 from markdown import markdown
 from jinja2 import *
 from pygments.formatters import HtmlFormatter
+from datetime import datetime
 
 
 class Generator(object):
@@ -29,7 +30,7 @@ class Generator(object):
         css = self.load_theme(self.theme)
         fonts = self.load_fonts()
         tmplenv = Environment(loader=FileSystemLoader(self.tmplpath))
-        slide_tmpl = tmplenv.get_template('index.html')
+        slide_tmpl = tmplenv.get_template('index.tmpl')
 
         if not os.path.splitext(ifn)[1] in self.mdexts:
             raise IOError("invalid Markdown extension")
@@ -41,7 +42,10 @@ class Generator(object):
                                            'markdown.extensions.codehilite'])
         hlcss = HtmlFormatter().get_style_defs('.codehilite')
         content = content.split('<hr />')
-        buf = slide_tmpl.render(css=css,
+        title = '{0} ({1})'.format(os.path.splitext(ifn)[0],
+                                   datetime.now().strftime('%B %d, %Y'))
+        buf = slide_tmpl.render(title=title,
+                                css=css,
                                 hlcss=hlcss,
                                 content=enumerate(content),
                                 fonts=fonts)

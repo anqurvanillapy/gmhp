@@ -132,7 +132,7 @@ this project.
 
 ### Themes ###
 
-- Current available themes are:
+- Currently available themes are:
     + **White** (as default)
 
 ### Export PDF ###
@@ -155,7 +155,7 @@ the fonts used in the generated pages are treated as default typefaces
 and will be straightly rendered **ahead of** the theme CSS! *This is an
 issue I will cope with in the future.*
 
-- The ahead-of-rendering fonts are:
+- The ahead-of-theme-CSS-rendering fonts are:
     + Lobster (`Lobster-Regular.ttf`)
     + Poiret One (`PoiretOne-Regular.ttf`)
     + Merriweather (`Merriweather-Regular.ttf`)
@@ -165,14 +165,21 @@ TODOs
 
 * [x] Create branch `gh-pages` for demostration.
 * [ ] ~~Use some web fonts to support CJK characters.~~ (Most of the
-web font services of CJK font family are restricted.)
+web font services of CJK font family are restricted, or in huge size,
+making the offline presentation difficult.)
 * [x] Support table syntax and related styles.
 * [ ] Update stylesheets of more themes. (Black, fluid, Takahashi
 method, etc.)
 * [ ] Add a feature of toggling the slideshow outline.
-* [ ] Cope with font family customization.
+* [ ] ~~Cope with font family customization.~~
+* [ ] Create specifications of themes for customization.
+* [ ] Make a share source directory to simplify the presentation web
+pages.
 * [ ] Add an option to specify whether CDN links or Base64 data should
 be used for fonts.
+* [ ] Different presentation templates of single slices based on order of
+elements and contents.
+* [ ] **Put these TODOs on Issues**.
 
 License
 -------
